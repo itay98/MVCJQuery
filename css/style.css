@@ -1,0 +1,35 @@
+body{
+    color: white;
+    background-color: black;
+}
+#digits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    line-height: 100px;
+    box-sizing: border-box;
+    font-size: 50px;
+    margin: auto;
+}
+#digits div{
+    width: 29%;
+    height: 22%;
+    background-color: aqua;
+    color: purple;
+    border: 5px solid red;
+}
+#digits .selected{
+    background-color: gold;
+}
+h2{
+    margin-bottom: 5px;
+}
+input[type = number]{
+    width: 50px;
+}
+span{
+    margin-left: 15px;
+}
