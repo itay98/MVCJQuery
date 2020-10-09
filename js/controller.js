@@ -1,6 +1,6 @@
 import * as View from "./view.js";
 import * as Model from "./model.js";
-export function init() {
+function init() {
     document.getElementById("enterPasscode").addEventListener("click", enterPasscode);
     for (let i = 0; i < 10; i++)
         document.getElementById(i).onclick = () => { codeInput(i) };
@@ -126,4 +126,4 @@ function loginSuccess(user) {
         data: { role: Model.myRole }, method: "GET"
     }, View.createUsersTable);
 }
-export { callUpdateUser, deleteUser };
+export { init, callUpdateUser, deleteUser };
