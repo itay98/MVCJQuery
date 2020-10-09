@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="#">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="login">
+        username: <input type="text" id="username">
+        <button id="enterPasscode">enter passcode</button>
+        <div id="digits" style="display: none;">
+            <div id="1">1</div>
+            <div id="2">2</div>
+            <div id="3">3</div>
+            <div id="4">4</div>
+            <div id="5">5</div>
+            <div id="6">6</div>
+            <div id="7">7</div>
+            <div id="8">8</div>
+            <div id="9">9</div>
+            <div id="0">0</div>
+        </div>
+        <audio src="assets/beep.mp3"></audio>
+        <audio src="assets/buzz.mp3"></audio>
+        <audio src="assets/fail.mp3"></audio>
+        <audio src="assets/success.mp3"></audio>
+        <audio src="assets/siren.mp3"></audio>
+    </div>
+    <div id="dashboard" style="display: none;">
+        <button id="logout">logout</button>
+        <div id="selfEdit">
+            <h4>Your Role:<span></span></h4>
+            <h2>Edit Your Details</h2>
+            username: <input type="text">
+            first name: <input type="text">
+            <button id="update">update</button>
+            <span>passcode: </span><input type="password" id="passcode">
+            <button id="updatePass">change</button>
+        </div>
+        <div id="editUsers">
+            <div id="usersTable">
+                <h2>The Users</h2>
+                <table></table>
+            </div>
+            <div id="newUser">
+                <h2>New User</h2>
+                username: <input type="text" id="addUsername">
+                first name: <input type="text" id="addFName">
+                role: <input type="number" id="addRole">
+                <button id="addUser">add user</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
